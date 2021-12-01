@@ -1,4 +1,4 @@
-f = open("day1.in")
+f = open("input_files/day1.in")
 previous = -2
 count = 0
 entries = f.readlines()
