@@ -67,7 +67,7 @@ def find_basin(j,i,ls):
                         ls = find_basin(j+k,i,ls)
                 except:
                     continue
-            return ls
+            # return ls
         
 # j+k/i+k != pi/pj makes sure we dont go back where we came from if the numbers are the same
 
@@ -85,7 +85,6 @@ for j in range(len(lines)):
     for i in range(len(lines[0].strip())):
         if find(j,i,0,0) not in low_points:
             low_points.append(find(j,i,0,0))
-
 
 sum_low = 0
 for points in low_points:
